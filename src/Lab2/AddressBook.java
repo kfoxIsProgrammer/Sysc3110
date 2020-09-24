@@ -1,4 +1,4 @@
-import BuddyInfo;
+package Lab2;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +15,15 @@ public class AddressBook {
     }
 
     public static void main(String[] args){
-        System.out.println("Address Book");
+
+        BuddyInfo buddy = new BuddyInfo();
+        AddressBook aBook = new AddressBook();
+        buddy.setAddress("Carleton");
+        buddy.setName("Jim");
+        buddy.setPhoneNumber("613");
+        aBook.addBuddy(buddy);
+        aBook.deleteBuddy(buddy);
+
     }
 
 }
