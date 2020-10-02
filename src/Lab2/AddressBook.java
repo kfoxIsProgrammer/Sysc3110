@@ -23,6 +23,15 @@ public class AddressBook {
         buddy.setPhoneNumber("613");
         aBook.addBuddy(buddy);
         aBook.deleteBuddy(buddy);
+        System.out.println(aBook.toString());
+
+
+    }
+
+    //THis is the change to buddy
+
+    public String toString(){
+        return this.getClass().toString();
 
     }
 
